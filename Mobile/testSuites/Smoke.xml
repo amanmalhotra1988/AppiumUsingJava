@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+<listeners>
+ <listener class-name="com.quovantis.quarcmobile.testbase.Base_Final"/>
+ 	</listeners>
+    <test name="xyz">
+    <classes>
+<class name="com.quovantis.quarcmobile.testcases.M_Login">
+      <methods>
+        <include name="QuarcMobile_Login" />
+      </methods>
+    </class>
+<class name="com.quovantis.quarcmobile.testcases.M_CreatePIN">
+      <methods>
+        <include name="QuarcMobile_CreatePIN" />
+      </methods>
+    </class> 
+<class name="com.quovantis.quarcmobile.testcases.M_Messages">
+      <methods>
+        <include name="QuarcMobile_Messages" />
+      </methods>
+    </class>  
+<!-- <class name="com.quovantis.quarcmobile.testcases.M_ComposePatientMessage">
+      <methods>
+        <include name="QuarcMobile_ComposePatientMessage" />
+      </methods>
+    </class>  
+<class name="com.quovantis.quarcmobile.testcases.M_ComposeDirectMessage">
+      <methods>
+        <include name="QuarcMobile_ComposeDirectMessage" />
+      </methods>
+    </class> -->
+<class name="com.quovantis.quarcmobile.testcases.M_Directory">
+      <methods>
+        <include name="QuarcMobile_Directory" />
+      </methods>
+    </class> 
+<class name="com.quovantis.quarcmobile.testcases.M_Patients">
+      <methods>
+        <include name="QuarcMobile_Patients" />
+      </methods>
+    </class> 
+<class name="com.quovantis.quarcmobile.testcases.M_Preferences">
+      <methods>
+        <include name="QuarcMobile_Preferences" />
+      </methods>
+    </class> 
+<!--  <class name="com.quovantis.quarcmobile.util.SendEmail">
+      <methods>
+        <include name="emailReport" />
+      </methods>
+</class>  -->
+</classes>
+</test>
+</suite>

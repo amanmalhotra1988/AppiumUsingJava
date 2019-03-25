@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="com.quovantis.quarcmobile.testbase.Base_Final"/>
+  </listeners>
+  <test name="xyz(failed)">
+    <classes>
+      <class name="com.quovantis.quarcmobile.testcases.M_Preferences">
+        <methods>
+          <include name="QuarcMobile_Preferences"/>
+          <include name="beforeCallingAnyTestCase"/>
+          <include name="af"/>
+          <include name="report_method"/>
+        </methods>
+      </class> <!-- com.quovantis.quarcmobile.testcases.M_Preferences -->
+      <class name="com.quovantis.quarcmobile.testcases.M_Messages">
+        <methods>
+          <include name="beforeCallingAnyTestCase"/>
+          <include name="af"/>
+          <include name="QuarcMobile_Messages"/>
+          <include name="report_method"/>
+        </methods>
+      </class> <!-- com.quovantis.quarcmobile.testcases.M_Messages -->
+    </classes>
+  </test> <!-- xyz(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
